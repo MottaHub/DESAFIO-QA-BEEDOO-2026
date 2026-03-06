@@ -69,3 +69,9 @@ Alguns cenários importantes considerados para os testes da aplicação:
 * Inserir possíveis scripts para verificar tratamento de entradas (ex: `<script>alert(1)</script>`)
 * Excluir um curso existente
 * Verificar se a listagem de cursos é atualizada após exclusão
+
+## Casos de Teste
+
+Os cenários e casos de teste executados estão documentados na planilha abaixo:
+
+https://docs.google.com/spreadsheets/d/1a5lKTLacKNX7_LDbxj_hgNmDiFTuNfvsVxOanzTOo7c/edit?usp=sharing
