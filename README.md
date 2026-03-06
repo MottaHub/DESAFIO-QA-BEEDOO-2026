@@ -81,3 +81,105 @@ https://docs.google.com/spreadsheets/d/1a5lKTLacKNX7_LDbxj_hgNmDiFTuNfvsVxOanzTO
 As evidências (prints da execução dos testes) podem ser acessadas no link abaixo:
 
 https://drive.google.com/drive/u/0/folders/1u4QTL_tcokqaY46tfiVQzU_QcAveYHdF
+
+---
+
+## Relatório de Bugs
+
+### Bug 1 — Sistema permite cadastro de curso sem nome
+
+* Descrição:
+O sistema permite cadastrar um curso mesmo quando o campo Nome do curso está vazio.
+
+* Passos para reproduzir:
+
+- Acessar a tela de cadastro de curso
+
+- Deixar o campo Nome do curso vazio
+
+- Preencher os demais campos ou deixá-los vazios
+
+- Clicar em Cadastrar curso
+
+* Resultado atual:
+O sistema permite o cadastro do curso sem nome e ele aparece na listagem.
+
+* Resultado esperado:
+O sistema deveria impedir o cadastro e exibir uma mensagem solicitando o preenchimento do campo Nome do curso.
+
+* Severidade / Impacto:
+Alta — pode comprometer a integridade dos dados cadastrados no sistema.
+
+### Bug 2 — Sistema aceita número de vagas negativo
+
+* Descrição:
+O sistema aceita valores negativos no campo Número de vagas durante o cadastro do curso.
+
+* Passos para reproduzir:
+
+- Acessar a tela de cadastro de curso
+
+- Preencher os campos do formulário
+
+- Inserir um valor negativo no campo Número de vagas (ex: -10)
+
+- Clicar em Cadastrar curso
+
+* Resultado atual:
+O sistema aceita o valor negativo e o curso é cadastrado normalmente.
+
+* Resultado esperado:
+O sistema deveria validar o campo e impedir valores negativos, exibindo uma mensagem de erro.
+
+* Severidade / Impacto:
+Alta — valores inválidos podem comprometer o funcionamento da aplicação.
+
+### Bug 3 — Sistema permite data de término anterior à data de início
+
+* Descrição:
+O sistema permite cadastrar um curso com data de término anterior à data de início, o que gera inconsistência lógica.
+
+* Passos para reproduzir:
+
+- Acessar a tela de cadastro de curso
+
+- Preencher os campos do formulário
+
+- Inserir uma data de início posterior à data de término
+
+- Clicar em Cadastrar curso
+
+* Resultado atual:
+O sistema permite o cadastro do curso mesmo com datas inconsistentes.
+
+* Resultado esperado:
+O sistema deveria validar as datas e impedir o cadastro quando a data de término for anterior à data de início.
+
+* Severidade / Impacto:
+Média — pode gerar inconsistências nas informações dos cursos.
+
+### Bug 4 — Script inserido no campo de texto é removido sem feedback ao usuário
+
+* Descrição:
+Ao inserir um script como <script>alert(1)</script> em campos de texto, o sistema remove o conteúdo sem apresentar feedback ao usuário.
+
+* Passos para reproduzir:
+
+- Acessar a tela de cadastro de curso
+
+- Inserir <script>alert(1)</script> no campo Nome do curso
+
+- Clicar em Cadastrar curso
+
+* Resultado atual:
+O script não é exibido após o cadastro e aparentemente é removido automaticamente.
+
+Resultado esperado:
+- O sistema deveria
+
+Bloquear a inserção e informar o usuário, ou
+
+Exibir o conteúdo como texto sanitizado.
+
+* Severidade / Impacto:
+Baixa — indica que existe algum tratamento de segurança, mas sem feedback ao usuário.
