@@ -93,13 +93,13 @@ O sistema permite cadastrar um curso mesmo quando o campo Nome do curso está va
 
 * Passos para reproduzir:
 
-- Acessar a tela de cadastro de curso
+Acessar a tela de cadastro de curso
 
-- Deixar o campo Nome do curso vazio
+Deixar o campo Nome do curso vazio
 
-- Preencher os demais campos ou deixá-los vazios
+Preencher os demais campos ou deixá-los vazios
 
-- Clicar em Cadastrar curso
+Clicar em Cadastrar curso
 
 * Resultado atual:
 O sistema permite o cadastro do curso sem nome e ele aparece na listagem.
@@ -117,13 +117,13 @@ O sistema aceita valores negativos no campo Número de vagas durante o cadastro 
 
 * Passos para reproduzir:
 
-- Acessar a tela de cadastro de curso
+Acessar a tela de cadastro de curso
 
-- Preencher os campos do formulário
+Preencher os campos do formulário
 
-- Inserir um valor negativo no campo Número de vagas (ex: -10)
+Inserir um valor negativo no campo Número de vagas (ex: -10)
 
-- Clicar em Cadastrar curso
+Clicar em Cadastrar curso
 
 * Resultado atual:
 O sistema aceita o valor negativo e o curso é cadastrado normalmente.
@@ -141,13 +141,13 @@ O sistema permite cadastrar um curso com data de término anterior à data de in
 
 * Passos para reproduzir:
 
-- Acessar a tela de cadastro de curso
+Acessar a tela de cadastro de curso
 
-- Preencher os campos do formulário
+Preencher os campos do formulário
 
-- Inserir uma data de início posterior à data de término
+Inserir uma data de início posterior à data de término
 
-- Clicar em Cadastrar curso
+Clicar em Cadastrar curso
 
 * Resultado atual:
 O sistema permite o cadastro do curso mesmo com datas inconsistentes.
@@ -165,17 +165,17 @@ Ao inserir um script como <script>alert(1)</script> em campos de texto, o sistem
 
 * Passos para reproduzir:
 
-- Acessar a tela de cadastro de curso
+Acessar a tela de cadastro de curso
 
-- Inserir <script>alert(1)</script> no campo Nome do curso
+Inserir <script>alert(1)</script> no campo Nome do curso
 
-- Clicar em Cadastrar curso
+Clicar em Cadastrar curso
 
 * Resultado atual:
 O script não é exibido após o cadastro e aparentemente é removido automaticamente.
 
 Resultado esperado:
-- O sistema deveria
+O sistema deveria
 
 Bloquear a inserção e informar o usuário, ou
 
