@@ -1,5 +1,9 @@
 # DESAFIO QA - BEEDOO 2026
 
+Este repositório contém a análise, criação e execução de testes para o módulo de cadastro e listagem de cursos da aplicação fornecida no desafio técnico da Beedoo.
+
+---
+
 ## Análise da aplicação
 
 A aplicação tem como objetivo permitir o **cadastro e a listagem de cursos**.
