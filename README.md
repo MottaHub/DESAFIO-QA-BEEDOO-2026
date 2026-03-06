@@ -75,3 +75,9 @@ Alguns cenários importantes considerados para os testes da aplicação:
 Os cenários e casos de teste executados estão documentados na planilha abaixo:
 
 https://docs.google.com/spreadsheets/d/1a5lKTLacKNX7_LDbxj_hgNmDiFTuNfvsVxOanzTOo7c/edit?usp=sharing
+
+## Evidências de execução dos testes
+
+As evidências (prints da execução dos testes) podem ser acessadas no link abaixo:
+
+https://drive.google.com/drive/u/0/folders/1u4QTL_tcokqaY46tfiVQzU_QcAveYHdF
